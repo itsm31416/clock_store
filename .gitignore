@@ -1,0 +1,19 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Java / Maven
+target/
+*.class
+
+# Variables de entorno
+.env
+.env.local
+
+# Node (frontend)
+node_modules/
+dist/
+
+# Sistema
+.DS_Store
+Thumbs.db
