@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-
+import com.monadia.auth.domain.model.enums.usuario.Role;
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
@@ -20,7 +20,7 @@ public class Usuario {
     private String phoneNumber;
     private String city;
     private String address;
-    /*private Role role;*/
+    private Role role;
     private LocalDateTime registrationDate;
     private LocalDateTime lastLogin;
 }
