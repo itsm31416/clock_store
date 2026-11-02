@@ -7,4 +7,5 @@ public interface UsuarioGateway {
     void eliminarPorId(Long id);
     Usuario buscarPorEmail(String email);
     void actualizarLastLogin(Long id, LocalDateTime fecha);
+    Usuario guardar(Usuario usuario);
 }
