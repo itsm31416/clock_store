@@ -105,6 +105,10 @@ public class UsuarioUseCase {
     }
 
     public Usuario registrarUsuario(RegistroDto dto) {
+        return registrarConRol(dto, Role.USUARIO);
+    }
+
+    public Usuario registrarConRol(RegistroDto dto, Role role) {
         validarEmailUnico(dto.getEmail(), null);
 
         Usuario usuario = new Usuario();
@@ -114,7 +118,7 @@ public class UsuarioUseCase {
         usuario.setPhoneNumber(dto.getPhoneNumber());
         usuario.setCity(dto.getCity());
         usuario.setAddress(dto.getAddress());
-        usuario.setRole(Role.USUARIO);
+        usuario.setRole(role);
 
         return usuarioGateway.guardar(usuario);
     }
