@@ -3,8 +3,10 @@ package com.monadia.catalogo.domain.model;
 import com.monadia.catalogo.domain.model.enums.clocks.Genero;
 import com.monadia.catalogo.domain.model.enums.clocks.Marca;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 
